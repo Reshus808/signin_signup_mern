@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  //background-color: #653dc9;
+  height: 100%;
+  width: 100%;
+
+  .container {
+    margin: auto;
+    background-color: lightgray;
+    padding: 7rem;
+    box-shadow: 0 0 80px 10px #e3dede;
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+
+      padding: 10px 0;
+      font-size: 20px;
+      color: #2222a9;
+    }
+
+    p {
+      padding: 10px 0;
+      font-size: 20px;
+      color: #030310;
+    }
+
+
+    button {
+      margin-top: 20px;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      background-color: #5740bb;
+      color: white;
+      font-size: 17px;
+      border-radius: 10px;
+    }
+  }
+}
