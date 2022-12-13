@@ -9,9 +9,11 @@ const userSchema = new mongoose.Schema({
   verified: Boolean
 })
 
+const saltRounds = process.env.KEY;
+
 userSchema.pre('save', async  function (next) {
   if (this.isModified('password')) {
-    this.password = await bcrypt.hash(this.password, 12);
+    this.password = await bcrypt.hash(this.password, saltRounds);
   }
   next();
 });
